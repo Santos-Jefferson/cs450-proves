@@ -60,7 +60,7 @@ def get_majority_vote(neighbours):
 
 
 for i in range(len(data_test)):
-    neighbours = get_neighbours(training_set=train, test_instance=test[i][0], k=5)
+    neighbours = get_neighbours(training_set=train, test_instance=test[i][0], k=10)
     majority_vote = get_majority_vote(neighbours)
     arrayPredictions.append(majority_vote)
 
